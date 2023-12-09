@@ -8,6 +8,7 @@ on:
     branches:
       - production
 
+      
 jobs:
   build-and-deploy:
     runs-on: ubuntu-22.04
@@ -16,6 +17,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: '20.3.1' 
+        ref: production
 
     - name: Set environment variables
       run: echo "GATSBY_S3_BUCKET=${{ secrets.GATSBY_S3_BUCKET }}" >> $GITHUB_ENV
