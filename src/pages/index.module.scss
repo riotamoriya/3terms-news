@@ -55,24 +55,10 @@ main {
     .contents {
       // background-color: yellow;
       padding-right: 5vw;
-      display: flex;
-      flex-direction: column;
-
-      text-align: left
-    }
-
-    .next {
-      padding-right: 0;
-      padding-left: 8vw;
-
-
-      display: flex;
-      flex-direction: column;
+      padding-left: 5vw;
       text-align: left;
-
-      height: 8rem;
-
     }
+    
 
   }
 

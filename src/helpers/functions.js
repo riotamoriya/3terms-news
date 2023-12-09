@@ -19,9 +19,10 @@ export const formatTime = (dateString) => {
   const year = convertToKanji(date.getFullYear().toString());
   const month = convertToKanji((date.getMonth() + 1).toString());
   const day = convertToKanji(date.getDate().toString());
-  const hours = convertToKanji(date.getHours().toString().padStart(2, '0'));
-  const minutes = convertToKanji(date.getMinutes().toString().padStart(2, '0'));
+  const hours = convertToKanji(date.getHours().toString());
+  const minutes = convertToKanji(date.getMinutes().toString());
+  const seconds = convertToKanji(date.getSeconds().toString());
 
   // フォーマットされた日付と時間
-  return `${year}年${month}月${day}日 ${hours}時${minutes}分`;
+  return `${year}年${month}月${day}日 ${hours}時${minutes}分${seconds}秒`;
 };

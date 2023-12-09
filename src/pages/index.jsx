@@ -1,4 +1,3 @@
-// Step 1: Import React
 import * as React from 'react'
 import { graphql } from "gatsby"
 import Layout from '../components/Layout';
@@ -8,24 +7,24 @@ import { replace3dots, formatTime, cutNhkInfo } from '../helpers/functions';
 
 import * as styles from './index.module.scss';
 
-const IndexPage = ({data}) => {
+const IndexPage = ({ data }) => {
   const latest_articles = data.allArticle.edges || null;
 
   return (
     <Layout>
       <main className={styles.main}>
-        <div className={styles.space1}/>
-        
+        <div className={styles.space1} />
+
         <div className={styles.articleContainer}>
           {latest_articles.map((article, index) => {
 
             const a_title = cutNhkInfo(article.node.title);
             const a_description = replace3dots(article.node.description);
             const a_publishedAt = formatTime(article.node.publishedAt);
-            
+
             const a_url = article.node.url;
 
-            return(
+            return (
               <div key={index}>
                 <h2 className={styles.title}>
                   {a_title}
@@ -35,15 +34,15 @@ const IndexPage = ({data}) => {
                 </h5>
                 <p className={styles.contents}>
                   {a_description}
+                  <a href={a_url} target="_blank" rel="noopener noreferrer" className={styles.next}>
+                    Δ記事続き∇
+                  </a>
                 </p>
-                <a href={a_url} target="_blank" rel="noopener noreferrer" className={styles.next}>
-                  Δ記事続き∇
-                </a>
               </div>
             )
           })}
         </div>
-        <div className={styles.space2}/>
+        <div className={styles.space2} />
       </main>
     </Layout>
   )
@@ -64,6 +63,6 @@ export const query = graphql`
 `;
 
 
-export const Head = () => <Seo/>
+export const Head = () => <Seo />
 
 export default IndexPage
