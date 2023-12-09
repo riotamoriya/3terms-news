@@ -45,7 +45,15 @@ module.exports = {
       }
     },
     `gatsby-plugin-sitemap`,
-
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-TCBFERPWC2"],  // 控えておいた、測定IDを記載します。
+        pluginConfig: {
+          head: true  // headタグに記載されるようにコンフィグを設定します。
+        }
+      }
+    },
     
     "gatsby-plugin-sass",
     {
