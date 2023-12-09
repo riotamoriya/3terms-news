@@ -24,6 +24,10 @@ jobs:
       env:
         NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
 
+
+
+    - name: Install gatsby-plugin-s3
+      run: npm install -g gatsby-plugin-s3
     - name: Deploy to S3
       run: |
         yes | gatsby-plugin-s3 deploy
