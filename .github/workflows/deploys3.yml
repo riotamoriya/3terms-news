@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '55 * * * *'
+  push:
+    branches:
+      - production
 
 jobs:
   build-and-deploy:
