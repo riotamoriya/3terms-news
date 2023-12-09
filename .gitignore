@@ -1,0 +1,31 @@
+# Gatsby ビルド出力
+public
+.cache
+
+# ログファイル
+*.log
+
+# ローカルの .env ファイル
+.env
+.env.production
+
+# ノードモジュール
+node_modules
+
+# エディタの設定ファイルやキャッシュ
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.swn
+*.sublime*
+*.idea/
+.vscode/
+
+# OS生成ファイル
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# yarn エラーログ
+.yarn-error.log

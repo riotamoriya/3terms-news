@@ -1,0 +1,82 @@
+
+main {
+  // background-color: lightcyan;
+
+  display: grid;
+
+  grid-template-columns	:1fr; 
+  grid-template-rows: 10vh 60vh 10vh;
+
+  .space1 {
+    // background-color: yellow;
+  }
+
+  .article-container {
+    padding: 0;
+    // background-color: lightgreen;
+
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    flex-wrap: nowrap; /* wrap から nowrap に変更 */
+    overflow-x: auto; /* 横方向のスクロールバーを許可 */
+    align-items: stretch;
+
+
+    // スクロールバーを隠す
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none; // IE および Edge 用
+    scrollbar-width: none; // Firefox 用
+
+
+    > * {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      white-space: pre-wrap;
+      
+    }
+
+    .title{
+      // background-color: green;
+      padding-right: 5vw;
+    }
+    .published-at {
+      // background-color: yellow;
+      padding-right: 1vw;
+
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+    }
+
+    .contents {
+      // background-color: yellow;
+      padding-right: 5vw;
+      display: flex;
+      flex-direction: column;
+
+      text-align: left
+    }
+
+    .next {
+      padding-right: 0;
+      padding-left: 8vw;
+
+
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      height: 8rem;
+
+    }
+
+  }
+
+  .space2 {
+    // background-color: pink;
+  }
+}

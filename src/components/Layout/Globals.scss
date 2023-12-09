@@ -1,0 +1,59 @@
+:root {
+  // --standard-font: "BIZ UDGothic", "BIZ UDPGothic", "BIZ UDMincho", "BIZ UDPMincho";
+  --standard-font: "BIZ UDGothic", "BIZ UDPGothic", "BIZ UDMincho", "BIZ UDPMincho";
+
+  --standard-black: #555;
+  --standard-light-green: #2f9f180e;
+
+  --very-small: 0.8rem;
+  --small: 1.0rem;
+  --medium: 1.2rem;
+  --large: 1.5rem;
+
+}
+body {
+  background-color: var(--standard-light-green);
+  overflow: hidden; 
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+
+h2 {
+  color: var(--standard-black);
+  font-family: "BIZ UDPGothic";
+  font-weight: bold;
+  font-size: var(--large);
+
+  margin: 0;
+}
+
+h5 {
+  color: var(--standard-black);
+  font-family: "BIZ UDPGothic";
+  font-size: var(--small);
+  font-weight: normal;
+
+  margin: 0;
+}
+
+p {
+  color: var(--standard-black);
+  font-family: "BIZ UDPGothic";
+  font-size: var(--medium);
+  font-weight: normal;
+
+  margin: 0;
+}
+
+
+a {
+  color: var(--standard-black);
+  font-family: "BIZ UDPGothic";
+  font-size: var(--very-small);
+
+  font-weight: bold;
+
+  margin: 0;
+
+  text-decoration: none; /* 下線を消す */
+}
