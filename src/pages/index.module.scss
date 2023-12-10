@@ -13,9 +13,24 @@ main {
   -ms-user-select: none;      /* Internet Explorer/Edge用 */
   user-select: none;          /* 非プレフィックス版 */
   
-  .space1 {
-    // background-color: yellow;
+  .head-controller {
+    position: relative;
+    width: 100%;  // または必要な幅
+    height: 100%; // または必要な高さ
+    // background-color: yellow; // 背景色
+  
+    .logic1 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1rem;   // 幅を1remに設定
+      height: 1rem;  // 高さを1remに設定
+      // background-color: blue; // 正方形の背景色
+      
+    }
   }
+  
+  
 
   .article-container {
     padding: 0;

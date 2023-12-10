@@ -48,10 +48,19 @@ const IndexPage = ({ data }) => {
 
   const latest_articles = data.allArticle.edges || null;
 
+  
   return (
     <Layout>
       <main className={styles.main}>
-        <div className={styles.space1} />
+        <div className={styles.headController}>
+          <a 
+            href="https://github.com/riotamoriya/3terms-news" 
+            className={styles.logic1} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="Redirect to Google"
+          />
+        </div>
 
         <div className={styles.articleContainer}>
           {latest_articles.map((article, index) => {
