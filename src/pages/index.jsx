@@ -34,9 +34,13 @@ const IndexPage = ({ data }) => {
                 </h5>
                 <p className={styles.contents}>
                   {a_description}
-                  <a href={a_url} target="_blank" rel="noopener noreferrer" className={styles.next}>
+                  <span className={styles.next}>
+                    Δ記事終∇
+                  </span>
+                  {/* <a href={a_url} target="_blank" rel="noopener noreferrer" className={styles.next}>
                     Δ記事続き∇
-                  </a>
+                  </a> */}
+
                 </p>
               </div>
             )

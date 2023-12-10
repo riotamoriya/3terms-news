@@ -3,7 +3,7 @@ export const cutNhkInfo = (str) => {
 }
 
 export const replace3dots = (str) => {
-  const fixedStr = str ? str.replace(/…/g, '...') : '***** 情 報 取 得 不 可 *****'
+  const fixedStr = str ? str.replace(/…/g, '..') : '*** 情 報 取 得 不 可 ***'
   return fixedStr;
 }
 
@@ -12,6 +12,9 @@ const convertToKanji = (num) => {
   const kanjiNumbers = ['〇', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
   return num.split('').map(n => kanjiNumbers[n]).join('');
 };
+
+
+
 export const formatTime = (dateString) => {
   // UTCの日時をローカルの日時に変換
   const date = new Date(dateString);
