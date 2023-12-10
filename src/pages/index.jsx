@@ -21,7 +21,12 @@ const IndexPage = ({ data }) => {
       // 1. fetch strage data
       const decode_previous_value = await JSON.parse(storage.getItem());
       const decode_previous_value_dev = await
-        process.env.NODE_ENV === 'development' ? decode_previous_value.slice(2) : decode_previous_value;
+        process.env.NODE_ENV === 'development' 
+          ? ( decode_previous_value ? decode_previous_value.slice(2) : [])
+          : decode_previous_value || []
+        ;
+          
+
       await setPrevious_strage_ary(decode_previous_value_dev);
         // await console.log(`1. Previous Strage Value↓`);
         // await console.log(previous_strage_value);
@@ -54,7 +59,7 @@ const IndexPage = ({ data }) => {
             const a_title = cutNhkInfo(article.node.title);
             const a_description = replace3dots(article.node.description);
             const a_publishedAt = formatTime(article.node.publishedAt);
-            const a_url = article.node.url;
+            // const a_url = article.node.url;
             const a_id = article.node.id;
 
             const id_is_in_ary_flg = previous_strage_ary 

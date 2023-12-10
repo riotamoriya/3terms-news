@@ -3,11 +3,7 @@ export const cutNhkInfo = (str) => {
 }
 
 export const replace3dots = (str) => {
-<<<<<<< HEAD
-  const fixedStr = str ? str.replace(/…/g, '.. ') : '***** 情 報 取 得 不 可 *****'
-=======
   const fixedStr = str ? str.replace(/…/g, '..') : '*** 情 報 取 得 不 可 ***'
->>>>>>> master
   return fixedStr;
 }
 
