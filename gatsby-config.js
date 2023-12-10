@@ -2,26 +2,27 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 
+
 require('dotenv').config();
 
 module.exports = {
   // siteMetadata:= サイト全体で使用するメタデータを定義するために使われます。
   // サイトのタイトル、説明、著者などの一般的な情報を含むことが多いです。GraphQLクエリを通じてサイトのどこからでもアクセスできます。
   siteMetadata: {
-    title: `3terms-news`,
+    title: `３項ニュース`,
     description: `We are delivering only 3 big news everyday.`,
     image: `assets/brand.png`,
     siteUrl: `https://d1dbsbht6shkxg.cloudfront.net/`,
     type: `website`,
-    keywords: `3terms-news`,
+    keywords: `３項ニュース, 3terms-news`, 
   },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `3terms-news`,
-        short_name: `3terms-news`,
-        description: `We are delivering only 3 big news everyday.`,
+        name: `３項ニュース`,
+        short_name: `3N`,
+        description: `シンプルなニュースを一時間おきに配信！！`,
         lang: `ja`,
         display: `browser`,
         start_url: `/`,
