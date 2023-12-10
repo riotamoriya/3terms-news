@@ -7,6 +7,12 @@ main {
   grid-template-columns	:1fr; 
   grid-template-rows: 10vh 60vh 10vh;
 
+
+  -webkit-user-select: none;  /* Safari用 */
+  -moz-user-select: none;     /* Firefox用 */
+  -ms-user-select: none;      /* Internet Explorer/Edge用 */
+  user-select: none;          /* 非プレフィックス版 */
+  
   .space1 {
     // background-color: yellow;
   }
