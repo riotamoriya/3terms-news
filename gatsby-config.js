@@ -9,20 +9,20 @@ module.exports = {
   // siteMetadata:= サイト全体で使用するメタデータを定義するために使われます。
   // サイトのタイトル、説明、著者などの一般的な情報を含むことが多いです。GraphQLクエリを通じてサイトのどこからでもアクセスできます。
   siteMetadata: {
-    title: `３項ニュース`,
-    description: `We are delivering only 3 big news everyday.`,
+    title: `ミミズク-テント`,
+    description: `We are delivering simple news every hours.`,
     image: `assets/brand.png`,
     siteUrl: `https://d1dbsbht6shkxg.cloudfront.net/`,
     type: `website`,
-    keywords: `３項ニュース, 3terms-news`, 
+    keywords: `ミミズク-テント, mimizuku-tent, 3terms-news`, 
   },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `３項ニュース`,
-        short_name: `3N`,
-        description: `シンプルなニュースを一時間おきに配信！！`,
+        name: `ミミズク-テント`,
+        short_name: `ミミズク-テント`,
+        description: `ニュースをシンプルに一時間おきに配信！！`,
         lang: `ja`,
         display: `browser`,
         start_url: `/`,

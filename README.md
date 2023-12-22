@@ -1,8 +1,8 @@
-# 3terms-news
+# ミミズク・テント（旧3terms-news）
 
 シンプルなニュースサイトを公開するサービスについての、開発プロジェクトである。
 
-- [ホームページリンク：https://3terms-news.com](https://d1dbsbht6shkxg.cloudfront.net)
+- [ホームページリンク：https://www.mimizuku-tent.com](https://www.mimizuku-tent.com)
 
 - [Cloudfrontリンク：https://d1dbsbht6shkxg.cloudfront.net](https://d1dbsbht6shkxg.cloudfront.net)
 

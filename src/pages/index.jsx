@@ -11,8 +11,11 @@ import { LocalStorageCRUD } from '../helpers/localStorage';
 import * as styles from './index.module.scss';
 
 
+
 const IndexPage = ({ data }) => {
   const [previous_strage_ary, setPrevious_strage_ary] = useState([]);
+
+  console.log(data)
 
   useEffect(() => {
     const storage = new LocalStorageCRUD();

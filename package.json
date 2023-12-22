@@ -1,10 +1,11 @@
 {
-  "name": "3terms-news",
+  "name": "mimizuku-tent",
   "version": "1.0.0",
   "private": true,
-  "description": "We are delivering only 3 big news everyday.",
+  "description": "We are delivering simple news every hours.",
   "author": "riotamoriya",
   "keywords": [
+    "mimizuku-tent", "mimizuku",
     "3terms-news",
     "3terms",
     "simple news"
